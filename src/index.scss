@@ -1,4 +1,38 @@
-// Variables
-$primaryFont: "Quicksand", sans-serif;
-$offWhite: #f2f2f2;
-$primaryColor: #f1356d;
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import "./Styles/variables";
+
+/* base styles */
+* {
+  margin: 0;
+  font-family: "Quicksand";
+  color: #333;
+}
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
+
+  h1 {
+    color: $primary;
+  }
+  .links {
+    margin-left: auto;
+  }
+
+  a {
+    margin-left: 16px;
+    text-decoration: none;
+    &:hover {
+      color: $primary;
+    }
+  }
+}
+
+.content {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+}

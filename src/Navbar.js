@@ -1,13 +1,12 @@
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <h1>The Mustafa React Site</h1>
+      <h1>The Dojo Blog</h1>
       <div className="links">
         <a href="/">Home</a>
-        <a href="/creat">Create</a>
+        <a href="/create">New Blog</a>
       </div>
     </nav>
   );
 };
-
 export default Navbar;
