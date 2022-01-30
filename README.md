@@ -6,9 +6,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-Before running the app please install sass dependency
+Before running the app 
 
 ### `npm install --save-dev sass (For sass)`
+### `npx json-server --watch data/db.json --port 8000`
 
 ### `npm start`
 
