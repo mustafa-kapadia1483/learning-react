@@ -8,7 +8,7 @@ In the project directory, you can run:
 
 Before running the app please install sass dependency
 
-### `pm install --save-dev sass (For sass)`
+### `npm install --save-dev sass (For sass)`
 
 ### `npm start`
 
