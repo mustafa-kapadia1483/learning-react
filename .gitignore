@@ -2,6 +2,7 @@
 
 # local database 
 /data
+
 # dependencies
 /node_modules
 /.pnp
