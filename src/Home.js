@@ -1,17 +1,50 @@
+import { useState } from "react";
+import BlogList from "./BlogList";
+
 const Home = () => {
-  const handleClick = () => {
-    console.log("Hello Ninjas");
+  const [blogs, setBlogs] = useState([
+    {
+      title: "My new Website",
+      body: "lorem ipsum......",
+      author: "mario",
+      id: 1,
+    },
+    {
+      title: "Welcome party!",
+      body: "lorem ipsum......",
+      author: "mustu",
+      id: 2,
+    },
+    {
+      title: "Web dev top tips",
+      body: "lorem ipsum......",
+      author: "mario",
+      id: 3,
+    },
+  ]);
+
+  const handleDelete = id => {
+    const newBlogs = blogs.filter(blog => blog.id !== id);
+    setBlogs(newBlogs);
   };
-  const handleClickAgain = name => {
-    console.log("hello" + name);
-  };
+
   return (
     <div className="home">
-      <h1>Homepage</h1>
-      <button onClick={handleClick}>Click me</button>
-      <button onClick={() => handleClickAgain("mustafa")}>Click me</button>
+      <BlogList
+        blogs={blogs}
+        title="All Blogs!"
+        handleDelete={handleDelete}
+      ></BlogList>
+      <BlogList
+        blogs={blogs.filter(blog => blog.author === "mario")}
+        title="Mario's Blogs"
+        handleDelete={handleDelete}
+      ></BlogList>
     </div>
   );
 };
 
 export default Home;
+
+// Passing blogs as props
+// Data can be used later here

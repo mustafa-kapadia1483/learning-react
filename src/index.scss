@@ -36,3 +36,20 @@
   margin: 40px auto;
   padding: 20px;
 }
+
+// Blog previews list
+.blog-preview {
+  padding: 0.8em 1em;
+  margin: 1.5em 0;
+  border-bottom: 1px solid #fafafa;
+
+  &:hover {
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    color: $primary;
+    margin-bottom: 0.5em;
+  }
+}
